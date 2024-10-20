@@ -1,11 +1,15 @@
-
 {
     "compilerOptions": {
         "target": "ES6",
         "module": "commonjs",
         "outDir": "./dist",
+        "allowJs": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
         "strict": true,
+        "noImplicitAny": true,
         "sourceMap": true
     },
-    "include": ["index.ts"]
+    "include": ["*", "dictionary-readers/url-reader.ts", "dictionary-readers/file-reader.ts", "app/lexicon.ts", "app/trie-path-compressed.ts", "app/types"]
 }
